@@ -1,10 +1,11 @@
 package Utils;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class InputHandler {
+    private static Scanner scanner = new Scanner(System.in);
     public static int getIntInput(String text){
-        Scanner scanner = new Scanner(System.in);
         System.out.print(text);
         int input = scanner.nextInt();
 
@@ -12,7 +13,6 @@ public class InputHandler {
     }
 
     public static String getStringInput(String text){
-        Scanner scanner = new Scanner(System.in);
         System.out.print(text);
         String input = scanner.nextLine();
 
@@ -20,9 +20,15 @@ public class InputHandler {
     }
 
     public static boolean getBooleanInput(String text){
-        Scanner scanner = new Scanner(System.in);
         System.out.print(text);
         boolean input = scanner.nextBoolean();
+
+        return input;
+    }
+
+    public static double getDoubleInput(String text){
+        System.out.print(text);
+        double input = scanner.nextDouble();
 
         return input;
     }
