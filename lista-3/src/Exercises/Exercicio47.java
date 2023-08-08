@@ -42,7 +42,7 @@ public class Exercicio47 {
         System.out.println("Quantidade de pessoas com idade entre 18 e 25: " + youngAdults(patients));
         System.out.println("Nome do paciente mais velho: " + olderPatient(patients).getName());
         System.out.println("Nome da paciente mais baixa: " + shorterWoman(patients).getName());
-        System.out.println("...");
+        System.out.println("Média de altura das mulheres: " + middleHeightWomen(patients));
     }
 
     private static Patient patientData() {
@@ -79,6 +79,13 @@ public class Exercicio47 {
     private static Patient olderPatient(List<Patient> patients) {
         return patients.stream()
                 .max(Comparator.comparingInt(Patient::getAge))
+                .orElse(null);
+    }
+
+    private static Patient shorterWoman(List<Patient> patients) {
+        return patients.stream()
+                .filter(p -> p.getSex().equalsIgnoreCase("F"))
+                .min(Comparator.comparingDouble(Patient::getHeight))
                 .orElse(null);
     }
 
