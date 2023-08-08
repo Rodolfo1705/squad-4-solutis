@@ -10,13 +10,26 @@ public class Exercicio41 {
         Divisor.printExercise(41);
 
         Random randomGenerator = new Random();
-        int randomNumber = randomGenerator.nextInt(100);
+        int randomNumber = randomGenerator.nextInt(100) + 1;
 
-        int attemptNumber = InputHandler.getIntInput("Digite um valor ");
-
+        game(randomNumber);
     }
 
-    private static void game(int randomNumber, int attemptNumber){
+    private static void game(int randomNumber){
+        int attemptNumber;
 
+        do {
+            attemptNumber = InputHandler.getIntInput("Digite um valor de 1 a 100: ");
+        } while (attemptNumber < 1 || attemptNumber > 100);
+
+        do {
+            System.out.println("O número aleatório é " + (randomNumber > attemptNumber ? "maior" : "menor") + " que o número escolhido.");
+
+            attemptNumber = InputHandler.getIntInput("Digite outro número: ");
+
+            if (attemptNumber == randomNumber){
+                System.out.println("Você acertou! Parabéns!!!");
+            }
+        } while (attemptNumber != randomNumber);
     }
 }
