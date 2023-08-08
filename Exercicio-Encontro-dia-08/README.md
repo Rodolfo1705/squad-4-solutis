@@ -1,6 +1,6 @@
-#Exercício 1
+# Exercício 1
 
-Conta Corrente: 
+<b>Conta Corrente:</b> 
 - Atributos
     - String numero, String tipo, Cliente primeiroTitular, Cliente segundoTitular, double saldo, double limiteTotal;
 
@@ -17,7 +17,7 @@ Conta Corrente:
         - Se estiver devedor mostrar no final do resumo a mensagem "Procure o seu gerente!"
     - estaDevedor() - retorna true se o saldo for menor que zero, retorna false se o saldo for maior ou igual a zero.
 
-Conta Corrente: 
+<b>Cliente:</b> 
 - Atributos
     - String cpf, String nome, String endereco, String anoNascimento;
 
