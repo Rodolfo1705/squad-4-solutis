@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class InputHandler {
     private static Scanner scanner = new Scanner(System.in);
+  
     public static int getIntInput(String text){
         System.out.print(text);
         int input = scanner.nextInt();
@@ -22,6 +23,14 @@ public class InputHandler {
     public static boolean getBooleanInput(String text){
         System.out.print(text);
         boolean input = scanner.nextBoolean();
+      
+        return input;
+    }
+
+    public static double getDoubleInput(String text){
+        System.out.print(text);
+        double input = scanner.nextDouble();
+
 
         return input;
     }
