@@ -19,7 +19,7 @@ public class Exercicio3 {
     }
 
     private static double percent(int total, int num){
-        return ((double) num / total) * 100;
+        return (num / (double) total) * 100;
     }
 }
 
