@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lista-3/lista-3.iml" filepath="$PROJECT_DIR$/lista-3/lista-3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lista-4/lista-4.iml" filepath="$PROJECT_DIR$/lista-4/lista-4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/squad-4-solutis.iml" filepath="$PROJECT_DIR$/.idea/squad-4-solutis.iml" />
+    </modules>
+  </component>
+</project>

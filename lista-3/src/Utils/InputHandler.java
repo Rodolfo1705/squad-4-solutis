@@ -31,14 +31,6 @@ public class InputHandler {
         System.out.print(text);
         double input = scanner.nextDouble();
 
-
-        return input;
-    }
-
-    public static double getDoubleInput(String text){
-        System.out.print(text);
-        double input = scanner.nextDouble();
-
         return input;
     }
 }
