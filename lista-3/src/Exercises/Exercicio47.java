@@ -42,7 +42,6 @@ public class Exercicio47 {
         System.out.println("Quantidade de pessoas com idade entre 18 e 25: " + youngAdults(patients));
         System.out.println("Nome do paciente mais velho: " + olderPatient(patients).getName());
         System.out.println("Nome da paciente mais baixa: " + shorterWoman(patients).getName());
-        System.out.println("...");
     }
 
     private static Patient patientData() {

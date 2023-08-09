@@ -40,11 +40,7 @@ public class Exercicio15 {
     }
 
     private static boolean checkMonth (int month){
-        if (month >= 1 && month <= 12){
-            return true;
-        }
-
-        return false;
+        return month >= 1 && month <= 12;
     }
     private static String monthName(int month){
         String[] months = {"Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
