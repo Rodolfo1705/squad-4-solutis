@@ -10,6 +10,8 @@ public class Main {
         //Exercises.Exercicio21.run();
         //Exercises.Exercicio25.run();
         //Exercises.Exercicio29.run();
+        Exercises.Exercicio30.run();
+        //Exercises.Exercicio38.run();
         //Exercises.Exercicio33.run();
         //Exercises.Exercicio37.run();
         //Exercises.Exercicio41.run();

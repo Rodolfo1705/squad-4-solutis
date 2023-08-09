@@ -12,9 +12,24 @@ public class Exercicio38 {
 
         int number = InputHandler.getIntInput("Digite um numero: ");
         
-        if(number % 2 == 0)
-        	System.out.print("O numero " + number + " é um par");
-        else
-        	System.out.print("O numero " + number + " é um impar");
+        System.out.println("O número " + number + (numberIsPrime(number) ? "" : " não") + " é primo!");
 	}
+
+    private static boolean numberIsPrime(int number){
+        if (number < 2)
+            return false;
+
+        if (number < 4)
+            return true;
+
+        if (number % 2 == 0)
+            return false;
+
+        for (int i = 3; i * i <= number ; i+= 2){
+            if(number % i == 0)
+                return false;
+        }
+
+        return true;
+    }
 }

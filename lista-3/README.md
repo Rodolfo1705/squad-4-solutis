@@ -4,11 +4,11 @@
 
 <p align="justify">A seguir, há a divisão dos 64 exercícios entre os membros do squad 4.</p>
 
-- <b>Rodolfo: </b>1, 5, 9, 12, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49, 53, 57, 61 
+- <b>Rodolfo: </b>1, 5, 9, 12, 13, 17, 21, 25, 29, 30, 33, 37, 38, 41, 45, 49, 53, 57, 61 
 
 <hr>
 
-- <b>Leanderson: </b>2, 6, 10, 14, 18, 22, 26, 30, 34, 38, 42, 46, 50, 54, 58, 62
+- <b>Leanderson: </b>2, 6, 10, 14, 18, 22, 26, 34, 42, 46, 50, 54, 58, 62
 
 <hr>
 
