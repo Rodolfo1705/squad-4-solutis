@@ -15,7 +15,17 @@ public class Preguica extends AnimalAB{
         subirEmArvore();
     }
 
+    @Override
+    public AnimalIF clone() {
+        return new Preguica(getNome(), getIdade());
+    }
+
+    @Override
+    public boolean podeCorrer() {
+        return false;
+    }
+
     public void subirEmArvore(){
-        System.out.println(this.nome + " está em cima da árvore.");
+        System.out.println(this.getNome() + " está em cima da árvore.");
     }
 }

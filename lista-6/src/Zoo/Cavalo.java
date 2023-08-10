@@ -15,7 +15,17 @@ public class Cavalo extends AnimalAB{
         correr();
     }
 
+    @Override
+    public AnimalIF clone() {
+        return new Cavalo(getNome(), getIdade());
+    }
+
+    @Override
+    public boolean podeCorrer() {
+        return true;
+    }
+
     public void correr(){
-        System.out.println(this.nome + " está correndo.");
+        System.out.println(this.getNome() + " está correndo.");
     }
 }
