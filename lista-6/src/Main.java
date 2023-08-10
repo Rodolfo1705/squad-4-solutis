@@ -1,10 +1,20 @@
+import Enterprise.*;
 import Zoo.*;
 
 public class Main {
     public static void main(String[] args) {
         //pegarInstanciasDeAnimal(); Exercício 4
 
+        Empresa empresa = new Empresa();
+        Gerente gerente = new Gerente("Rodolfo","555", 3);
+        Supervisor supervisor = new Supervisor("Camila", "777", 0);
+        Vendedor vendedor = new Vendedor("Alessandro", "999", 0 );
 
+        System.out.println(empresa.calcularGastos());
+        System.out.println(empresa.calcularGastosCargos());
+        System.out.println(gerente);
+        System.out.println(supervisor);
+        System.out.println(vendedor);
     }
 
     private static void emitirSomAnimal(AnimalIF animal){

@@ -1,12 +1,12 @@
 package Enterprise;
 
 public class FuncionarioSemEstudo extends FuncionarioAB{
-    public FuncionarioSemEstudo(String nome, String codFuncional){
-        super(nome, codFuncional);
+    public FuncionarioSemEstudo(String nome, String codFuncional, double comissao){
+        super(nome, codFuncional, comissao);
     }
 
     @Override
-    public double calcularRendaAdicional(){
+    public double calcularRendaTotal(){
         return this.getRendaBasica();
     }
 }

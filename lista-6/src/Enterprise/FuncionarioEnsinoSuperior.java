@@ -6,13 +6,13 @@ public class FuncionarioEnsinoSuperior extends FuncionarioAB{
     }
 
     private final String nomeUniversidade;
-    public FuncionarioEnsinoSuperior(String nome, String codFuncional, String nomeUniversidade) {
-        super(nome, codFuncional);
+    public FuncionarioEnsinoSuperior(String nome, String codFuncional, String nomeUniversidade, double comissao ) {
+        super(nome, codFuncional, comissao);
         this.nomeUniversidade = nomeUniversidade;
     }
 
     @Override
-    public double calcularRendaAdicional(){
+    public double calcularRendaTotal(){
         return getRendaBasica() + getRendaBasica();
     }
 }
